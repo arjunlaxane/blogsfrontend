@@ -19,7 +19,7 @@ const AddBlog = () => {
 
   const sendRequest = async () => {
     const res = await axios
-      .post(`http://localhost:5002/api/blog/add`, {
+      .post(`https://blogsappfinal.herokuapp.com/api/blog/add`, {
         title: inputs.title,
         description: inputs.description,
         image: inputs.imageurl,
